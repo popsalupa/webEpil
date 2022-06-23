@@ -1,5 +1,7 @@
 * {
     margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1200px;
 }
 
@@ -11,7 +13,31 @@
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
+/* размер экрана меньше 1000 убираем меню */
+@media(max-width:1000px){
+    .menu-links{
+        display: none;
+    }
+    
+    /* убираем картинки в кард */
+    .cardfoto {
+        display: none;
+    }
+
+
+    .logoimg, img, {
+        margin: auto;
+    }
+
+
+}
+
+
 /* ссылки в header */
+.menu-links {
+    margin-right: 0;
+}
+
 .menu-list {
     margin-top: 7%;
     display: flex;
@@ -20,15 +46,19 @@
     border-bottom-left-radius: 30px;
 }
 
+
 .menu-item {
     font-family: 'Comfortaa', cursive;
     text-decoration: none;
     /* text-transform: uppercase; */
     color: #000;
-    font-size: 1em;
+    font-size: 100%;
     margin-left: 1.5em;
-
 }
+.menu-item:hover {
+    color: rgb(163, 203, 83);
+}
+
 .menu-list-item {
     display: flex;
 
@@ -40,11 +70,14 @@
 
 /* стиль лого */
 .logoimg {
-    margin: 1em 0 0 5em;
+    margin-top: 10%;
     display: block;
     width: 100px;
     border-radius: 30%;
     background: linear-gradient(#CC9292, #1fb5d6);
+}
+.logoimg:hover {
+    opacity: 0.4;
 }
 
 
@@ -88,8 +121,8 @@
 
 .imgcard {
     display: flex;
-border-radius: 30px;
-width: 200px;
+    border-radius: 30px;
+    width: 200px;
 }
 
 
