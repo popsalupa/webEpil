@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="400" height="400" viewBox="0 0 400 400" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.2</desc>
+<defs>
+</defs>
+<g transform="matrix(8.33 0 0 8.33 200 200)" id="Instagram"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(48,60,66); fill-rule: nonzero; opacity: 1;"  transform=" translate(-12, -12)" d="M 17 23 H 7 a 6 6 0 0 1 -6 -6 V 7 A 6 6 0 0 1 7 1 H 17 a 6 6 0 0 1 6 6 V 17 A 6 6 0 0 1 17 23 Z M 7 3 A 4 4 0 0 0 3 7 V 17 a 4 4 0 0 0 4 4 H 17 a 4 4 0 0 0 4 -4 V 7 a 4 4 0 0 0 -4 -4 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(8.33 0 0 8.33 200 200)" id="_Group_"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(48,60,66); fill-rule: nonzero; opacity: 1;"  transform=" translate(-12, -12)" d="M 12 18 a 6 6 0 1 1 6 -6 A 6 6 0 0 1 12 18 Z M 12 8 a 4 4 0 1 0 4 4 A 4 4 0 0 0 12 8 Z" stroke-linecap="round" />
+</g>
+<g transform="matrix(8.33 0 0 8.33 250 141.67)" id="_Group_2"  >
+<circle style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(48,60,66); fill-rule: nonzero; opacity: 1;"  cx="0" cy="0" r="1" />
+</g>
+</svg>
