@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     height: 7em;
-    background: linear-gradient(200deg, #70577B, #fff);
+    background: linear-gradient(200deg, #94c9cc, #fff);
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
@@ -42,7 +42,7 @@
 .menu-list {
     margin-top: 7%;
     display: flex;
-    background: linear-gradient(45deg, #C7D8F2, #FFC2C2);
+    background: linear-gradient(45deg, #bbc0d4, #76a3d6);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
@@ -75,58 +75,25 @@
     display: block;
     width: 70px;
     border-radius: 30%;
-    background: linear-gradient(#CC9292, #1fb5d6);
+    background: linear-gradient(#c8caf0, #96a9ce);
 }
 .logoimg:hover {
     opacity: 0.4;
 }
 
 
-
-/* main menu */
-.countainermain {
-    display: flex;
-    flex-direction: column;
+/* main */
+.containermain {
+    justify-content: center;
 }
 
-.boxmenu {
-    display: flex;
-    /* max-width: 90%; */
-    /* height: 110px; */
-    margin: auto;
-    background: linear-gradient(#EEF8FD, #beb2d3) ;
-}
-
-/* карточки статьи */
-h2 {
-    text-align: center;
-}
-
-li {
-    /* list-style-type: circle; */
-}
-
-.card-name {
-    display: flex;
-    margin: 2em 1em;
-    background:linear-gradient(75deg, #fff, #FEB6B6);
+.qwest {
+    display: inline-block;
+    padding: 1em;
     border-radius: 30px;
+    border: solid 1px black;
 }
 
-.textcard {
-    font-family: 'Comfortaa', cursive;
-    color: #000;
-    font-size: 100%;
-    text-decoration: none;
-    margin: 5%;
-}
-
-
-.imgcard {
-    display: flex;
-    border-radius: 30px;
-    justify-content: space-between;
-}
 
 
 /* footer */
@@ -135,7 +102,7 @@ li {
     display: block;
     justify-content: space-between;
     height: 4em;
-    background: linear-gradient(200deg, #70577B, #fff);
+    background: linear-gradient(200deg, #94c9cc, #fff);
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 }
