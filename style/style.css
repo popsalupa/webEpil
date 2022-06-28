@@ -97,6 +97,41 @@
     background: linear-gradient(#EEF8FD, #beb2d3) ;
 }
 
+/* aboutme */
+.aboutme-container {
+    display: flex;
+}
+
+.aboutme {
+    display: flex;
+    text-align: center;
+}
+
+.aboutmetext {
+    margin: 0 3%;
+    text-align: center;
+}
+
+/* photo */
+.me {
+    margin: 0 2%;
+    width: 200px;
+    opacity: 0.7;
+    border-top-left-radius: 39px;
+    border-bottom-right-radius: 39px;
+
+}
+@media(max-width:1000px){
+    .me {
+        opacity: 0.5;
+    }
+
+    .aboutme-container{
+        flex-direction: column;
+    }
+}
+
+
 /* карточки статьи */
 h2 {
     text-align: center;
@@ -109,7 +144,7 @@ li {
 .card-name {
     display: flex;
     margin: 2em 1em;
-    background:linear-gradient(75deg, #fff, #FEB6B6);
+    background:linear-gradient(75deg, #fff, #fbd2d2);
     border-radius: 30px;
 }
 

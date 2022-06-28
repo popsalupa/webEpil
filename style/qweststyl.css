@@ -88,11 +88,31 @@
 }
 
 .qwest {
-    display: inline-block;
+    display: flexbox;
+    width: fit-content;
+    margin-top: 2%;
+    margin-right: 2%;
     padding: 1em;
     border-radius: 30px;
-    border: solid 1px black;
+    border-bottom-right-radius: 0;
+    text-align: justify;
+    background: linear-gradient(#c2eaec, #f0edeb);
 }
+
+.qwest:nth-child(2n) {
+    background: linear-gradient(#fdfcff, #c2eaec);
+    margin-left: 2%;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+    margin-bottom: 7%;
+
+}
+
+h3 {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
 
 
 
