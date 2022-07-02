@@ -13,7 +13,9 @@
 </head>
 
 
-<header class="header">
+
+
+<header
   <div class="header-container">
 
     <div class="logo">
@@ -21,8 +23,27 @@
         <img class="logoimg" src="style/logo.png" alt="Логотип">
       </a>
     </div>
-    <!-- сделать ссылки и разобраться со стилями -->
-    <div class="menu-links">
+    
+
+    <nav class="nav">
+      <input class="nav__check" type="checkbox" id="showmenu"/>
+      <label class="nav__showmenu" for="showmenu">&#9776;</label>
+      <label class="nav__back" for="showmenu"></label>
+          <ul class="menu">
+            <li><a class="menu__item" href="index.html" >главная</a></li>
+            <li><a class="menu__item" href="qwest.html" class="menu-item">вопросы</a></li>
+            <li><a class="menu__item" href="#0">советы</a></li>
+            <li><a class="menu__item" href="#0"мифы</a></li>
+            <li><a class="menu__item" href="#0">противопоказания</a></li>
+            <li><a class="menu__item" href="#0">цены</a></li>
+            <li><a class="menu__item" href="#0">фото до/после</a></li>
+            <li><a class="menu__item" href="#0">контакты</a></li>
+          </ul>
+    </nav>
+
+
+
+    <div class="menu">
       <ul class="menu-list">
         <li class="menu-list-item"><a href="index.html" class="menu-item">главная</a></li>
         <li class="menu-list-item"><a href="qwest.html" class="menu-item">вопросы</a></li>
@@ -35,9 +56,7 @@
       </ul>
     </div>
   </div>
-
 </header>
-
 
 
 <main class="containermain">
