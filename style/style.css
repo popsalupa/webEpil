@@ -6,6 +6,15 @@
     max-width: 1200px;
 }
 
+body {
+    background-color: #e1ecfc;
+}
+.alltitle {
+    background-color: #fff;
+    width: 90%;
+    display: flex;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;

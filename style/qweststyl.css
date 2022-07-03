@@ -6,6 +6,15 @@
     max-width: 1200px;
 }
 
+body {
+    background-color: #d1dcf2;
+}
+.alltitle {
+    background-color: #fff;
+    width: 90%;
+    display: flex;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -26,7 +35,7 @@
     }
 
 
-    .logoimg, img, {
+    .logoimg, img {
         margin: auto;
     }
 
@@ -168,10 +177,20 @@
     justify-content: center;
 }
 
+.someqwest {
+    display: flex;
+    margin-top: 3%;
+    margin-right: 2%;
+    padding: 1em;
+    border-radius: 30px;
+    border-bottom-right-radius: 0;
+    text-align: justify;
+    background: linear-gradient(#b7e9ec, #a8c7e8);
+}
 .qwest {
     display: flexbox;
     width: fit-content;
-    margin-top: 2%;
+    margin-top: 3%;
     margin-right: 2%;
     padding: 1em;
     border-radius: 30px;
