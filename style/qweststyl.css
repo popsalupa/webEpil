@@ -190,6 +190,7 @@ body {
 .qwest {
     display: flexbox;
     width: fit-content;
+    font-size: 90%;
     margin-top: 3%;
     margin-right: 2%;
     padding: 1em;
@@ -206,6 +207,10 @@ body {
     border-bottom-left-radius: 0;
     margin-bottom: 7%;
 
+}
+
+.someqwest {
+    text-align: center;
 }
 
 h3 {
