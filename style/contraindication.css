@@ -7,10 +7,10 @@
 }
 
 body {
-    background-color: #e1ecfc;
+    background-color: #fdd4cc;
 }
 .alltitle {
-    background-color: #ffffff85  ;
+    background-color: #ffffff85;
     width: 90%;
     display: flex;
 }
@@ -19,35 +19,25 @@ body {
     display: flex;
     justify-content: space-between;
     height: 7em;
-    background: linear-gradient(200deg, #70577B, #fff);
+    background: linear-gradient(200deg, #efb58b, #fff);
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-
-
 /* размер экрана меньше 1000 убираем меню */
-@media(max-width:1000px) {
-    /* ссылк навигации */
+@media(max-width:1000px){
+    .menu-links{
+        display: none;
+    }
+
     .logoimg, img {
         margin: auto;
     }
-/* photo me */
-    .me {
-        opacity: 0.5;
-    }
- 
-    .aboutme-container {
-        flex-direction: column;
-    }
-
 
     /* hamburger */
     input {display: none;}
     label {cursor: pointer;}
 
-    .nav {
-        user-select: none;
-    }
+    .nav {user-select: none;}
 
     .nav__showmenu {
         position: absolute;
@@ -65,9 +55,6 @@ body {
     padding: 0;
     color: #fff;
     overflow: hidden;
-  }
-
-.menu {
     z-index: 3;
     position: fixed;
     top: 0;
@@ -79,7 +66,7 @@ body {
     padding: 17px 0;
     text-transform: uppercase;
     line-height: 2em;
-    background:linear-gradient(#beb2d3, #f4f2f2);
+    background:linear-gradient(#fcc0a6fc, #f4f2f2f2);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     transform: translateX(100%);
@@ -92,9 +79,8 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: #67538a;
+    color: #000;
 }
-
 
 .nav__check:checked~.nav__back {
     background-color: rgba(0,0,0,.2);
@@ -115,14 +101,15 @@ body {
     transform: translateX(0);
 }
 
-}
 
+}
 /* убрал второе меню */
 @media(min-width:1001px){
     .nav {
         display: none;
     }
 }
+
 
 
 /* ссылки в header */
@@ -133,11 +120,10 @@ body {
 .menu-list {
     margin-top: 7%;
     display: flex;
-    background: linear-gradient(45deg, #C7D8F2, #FFC2C2);
+    background: linear-gradient(45deg, #c6d7f586, #b0a4ff7b);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-
 
 .menu-item {
     font-family: 'Comfortaa', cursive;
@@ -166,101 +152,38 @@ body {
     display: block;
     width: 70px;
     border-radius: 30%;
-    background: linear-gradient(#CC9292, #1fb5d6);
+    background: linear-gradient(#efb58b, #96a9ce);
 }
 .logoimg:hover {
     opacity: 0.4;
 }
 
 
-
-/* main menu */
-.countainermain {
-    display: flex;
-    flex-direction: column;
+/* main */
+.containermain {
+    justify-content: center;
 }
 
-.boxmenu {
-    display: flex;
-    margin: auto;
-    background: linear-gradient(#EEF8FD, #beb2d3) ;
-}
-
-/* aboutme */
-.aboutme-container {
-    display: flex;
-    margin-top: 2%;
+h3 {
     margin-bottom: 2%;
-
-}
-
-.aboutme {
-    display: flex;
-    text-align: center;
-    margin-top: 2%;
-}
-
-.aboutmetext {
-    margin: 0 3%;
-    text-align:justify;
-    text-indent: 4%;
-}
-
-/* photo */
-.me {
-    display: flex;
-    z-index: -19;
-    margin: 0 2%;
-    width: 200px;
-    opacity: 0.7;
-    border-top-left-radius: 39px;
-    border-bottom-right-radius: 39px;
-
-}
-/* diplom */
-.diplom {
-    display: flex;
-    z-index: -1;
-    margin: 0 2%;
-    /* фото диплома подогнать и лучше сделать одтельное откр окно */
-    width: 75px;
-    height: 100px;
-    opacity: 0.7;
-    border-radius: 10px;
-    margin: 2px;
-}
-.imgdiplom {
-    display: flex;
-}
-
-
-/* карточки статьи */
-h1, h2 {
     text-align: center;
 }
 
-.card-name {
+
+.contraid {
     display: flex;
-    margin: 2em 1em;
-    background:linear-gradient(75deg, #fff, #fbd2d2);
-    border-radius: 30px;
+}
+
+.answer {  display: flexbox;
+    width: fit-content;
+    margin: 3%;
+    padding: 1em;
+    text-align: justify;
+    background-color: orange;
+    /* background: linear-gradient(#c2eaec, #f0edeb); */
 }
 
 
-.textcard {
-    /* font-family: 'Comfortaa', cursive; */
-    color: #000;
-    font-size: 100%;
-    text-decoration: none;
-    margin: 5%;
-}
-
-
-.imgcard {
-    display: flex;
-    border-radius: 30px;
-    justify-content: space-between;
-}
 
 
 /* footer */
@@ -269,7 +192,7 @@ h1, h2 {
     display: block;
     justify-content: space-between;
     height: 4em;
-    background: linear-gradient(200deg, #70577B, #fff);
+    background: linear-gradient(200deg, #efb58b, #fff);
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 }
@@ -302,6 +225,5 @@ h1, h2 {
 }
 
 .socialimg:hover {
-    background-color: #beb2d3;
+    background-color: #e279b6;
 }
-
