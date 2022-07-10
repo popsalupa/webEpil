@@ -201,9 +201,10 @@ body {
 }
 
 .aboutmetext {
-    margin: 0 3%;
+    margin: 2% 3%;
     text-align:justify;
     text-indent: 4%;
+    
 }
 
 /* photo */
@@ -231,11 +232,16 @@ body {
 }
 .imgdiplom {
     display: flex;
+    justify-content: center;
+}
+.studia {
+    display: block;
+    width: 80%;
+    text-align: center;
 }
 
-
 /* карточки статьи */
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
 }
 
