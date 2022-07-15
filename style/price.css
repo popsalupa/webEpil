@@ -101,7 +101,7 @@ body {
 }
 /* убрал второе меню */
 @media(min-width:1001px){
-    .nav {
+        .nav {
         display: none;
     }
 }
@@ -159,6 +159,7 @@ body {
 /* main */
 .containermain {
     margin: 2%;
+    margin-bottom: 20%;
     display: flex;
     justify-content: center;
     display: flex;
@@ -204,7 +205,6 @@ p:nth-child(2n) {
     display: flex;
     margin: 2px;
     border: 2px solid black;
-    display: flex;
     width: 200px;
     text-align: center;
     background: linear-gradient(#9ceec27b, #fff) ;
