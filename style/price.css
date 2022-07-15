@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #f6e5fcfa;
+    background-color: #89599afa;
 }
 
 
@@ -149,6 +149,7 @@ body {
     width: 70px;
     border-radius: 30%;
     background: linear-gradient(#c2f888, #f4a17e);
+    
 }
 .logoimg:hover {
     opacity: 0.4;
@@ -171,8 +172,8 @@ h3 {
 
 .alltitle {
     background-color: #ffffff85;
-    width: 90%;
-    /* display: flex; */
+    width: auto;
+    margin: 0 auto;
 }
 
 .imgprice {
@@ -180,8 +181,24 @@ h3 {
     margin: 0;
     width: 200px;
     height: 170px;
+    
+}
+.answer:hover {
+    opacity: 1;
+    background: rgba(174, 65, 108, 0.267);
+    transform: translateY(-8%);
+    transition: transform .5s ease-out;
+    cursor: pointer;
 }
 
+p {
+    color: red;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p:nth-child(2n) {
+    color: black;
+}
 
 .contraid {
     display: flex;
@@ -193,21 +210,14 @@ h3 {
     background: linear-gradient(#9ceec27b, #fff) ;
 }
 
-/* .answer {  
-    display: flex;
-    margin: 2%;
-    padding: 1em;
-    text-align: justify;
-    background-color: rgba(0, 255, 166, 0.293);
-    /* background: linear-gradient(#c2eaec, #f0edeb);
-} */
-
 
 
 /* footer */
 
 .footer-container {
-    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     justify-content: space-between;
     height: 4em;
     background: linear-gradient(200deg, #f4f7cafc, #fff);
