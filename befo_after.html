@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="style/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style/bef_aft.css" type="text/css">
+  <title>фото до/после</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<header
+  <div class="header-container">
+
+    <nav class="nav">
+      <input class="nav__check" type="checkbox" id="showmenu"/>
+      <label class="nav__showmenu" for="showmenu">&#9776;</label>
+      <label class="nav__back" for="showmenu"></label>
+          <ul class="menu">
+            <li><a class="menu__item" href="index.html" >главная</a></li>
+            <li><a class="menu__item" href="qwest.html" class="menu-item">вопросы</a></li>
+            <li><a class="menu__item" href="contraindication.html">противопоказания</a></li>
+            <li><a class="menu__item" href="price.html">цены</a></li>
+            <li><a class="menu__item" href="befo_after.html">фото до/после</a></li>
+            <li><a class="menu__item" href="#0">контакты</a></li>
+          </ul>
+    </nav>
+
+
+
+    <div class="logo">
+      <a href="index.html">
+        <img class="logoimg" src="style/logo.png" alt="Логотип">
+      </a>
+    </div>
+    
+
+
+
+
+    <div class="menu">
+      <ul class="menu-list">
+        <li class="menu-list-item"><a href="index.html" class="menu-item">главная</a></li>
+        <li class="menu-list-item"><a href="qwest.html" class="menu-item">вопросы</a></li>
+        <li class="menu-list-item"><a href="contraindication.html" class="menu-item">противопоказания</a></li>
+        <li class="menu-list-item"><a href="price.html" class="menu-item">цены</a></li>
+        <li class="menu-list-item"><a href="befo_after.html" class="menu-item">фото до/после</a></li>
+        <li class="menu-list-item"><a href="#0" class="menu-item">контакты</a></li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="alltitle">
+
+    <script>
+  function initComparisons() {
+  var x, i;
+  /*find all elements with an "overlay" class:*/
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    /*once for each "overlay" element:
+    pass the "overlay" element as a parameter when executing the compareImages function:*/
+    compareImages(x[i]);
+  }
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    /*get the width and height of the img element*/
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    /*set the width of the img element to 50%:*/
+    img.style.width = (w / 2) + "px";
+    /*create slider:*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    /*insert slider*/
+    img.parentElement.insertBefore(slider, img);
+    /*position the slider in the middle:*/
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    /*execute a function when the mouse button is pressed:*/
+    slider.addEventListener("mousedown", slideReady);
+    /*and another function when the mouse button is released:*/
+    window.addEventListener("mouseup", slideFinish);
+    /*or touched (for touch screens:*/
+    slider.addEventListener("touchstart", slideReady);
+    /*and released (for touch screens:*/
+    window.addEventListener("touchstop", slideFinish);
+    function slideReady(e) {
+      /*prevent any other actions that may occur when moving over the image:*/
+      e.preventDefault();
+      /*the slider is now clicked and ready to move:*/
+      clicked = 1;
+      /*execute a function when the slider is moved:*/
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      /*the slider is no longer clicked:*/
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      /*if the slider is no longer clicked, exit this function:*/
+      if (clicked == 0) return false;
+      /*get the cursor's x position:*/
+      pos = getCursorPos(e)
+      /*prevent the slider from being positioned outside the image:*/
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      /*execute a function that will resize the overlay image according to the cursor:*/
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = e || window.event;
+      /*get the x positions of the image:*/
+      a = img.getBoundingClientRect();
+      /*calculate the cursor's x coordinate, relative to the image:*/
+      x = e.pageX - a.left;
+      /*consider any page scrolling:*/
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      /*resize the image:*/
+      img.style.width = x + "px";
+      /*position the slider:*/
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+}
+  </script>
+
+
+<div class="img-comp-container">
+  <div class="img-comp-img">
+    <img src="https://i.pinimg.com/564x/60/94/ac/6094ac3068eea550fb8fee33069ff907.jpg" width="300" height="200">
+  </div>
+  <div class="img-comp-img img-comp-overlay">
+    <img src="https://i.pinimg.com/564x/7e/98/21/7e9821044e4db6473ac6fe116ac763b7.jpg" width="300" height="200">
+  </div>
+</div>
+
+<script>
+/*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
+initComparisons();
+</script>
+
+</body>
+</html>
+
+
+
+
+  
+  
+</div>
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="social">
+      <ul class="social-icon">
+       
+        <li class="markersocial"> 
+          <a href="https://vk.com/mrs.freememes">
+            <img class="socialimg" src="style/vk.svg" alt="вконтакте">
+          </a>
+        </li>
+          
+
+        <li class="markersocial"> 
+          <a href="https://wa.me/79991390161/">
+           <img class="socialimg" src="style/whatsapp.svg" alt="whatsapp">
+          </a>
+        </li>
+
+        <li class="markersocial"> 
+          <a href="http://instagram.com/electro.epilnn/">
+           <img class="socialimg" src="style/inst.svg" alt="instagram">
+          </a>
+        </li>
+
+        <li class="markersocial"> 
+          <a href="https://telegram.me/milasayuri1">
+           <img class="socialimg" src="style/telegram.svg" alt="telegram">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+</body>
