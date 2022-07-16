@@ -196,15 +196,15 @@ body {
     border-radius: 30px;
     border-bottom-right-radius: 0;
     text-align: justify;
-    background: linear-gradient(#c2eaec, #f0edeb);
+    background: linear-gradient(#fff, #4ad8f4ef);
 }
 .qwest:nth-child(odd){
     text-shadow: 0.3px 1px rgba(0, 0, 0, 0.226);
-    color:red;
+    color:#1a1618;
 }
 
 .qwest:nth-child(2n) {
-    background: linear-gradient(#fdfcff, #efc3fa);
+    background: linear-gradient(#fdfcff, #e9be4951);
     margin-left: 2%;
     border-radius: 30px;
     border-bottom-left-radius: 0;
