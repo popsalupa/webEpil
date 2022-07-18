@@ -158,15 +158,17 @@ body {
 
 /* main */
 .alltitle {
+    display: inline-flexbox;
+    margin-right: auto;
+    margin-left: auto;        
     background-color: #aae89433;
-    width: auto;
-    margin: auto auto;
+    
 }
 
 * {box-sizing: border-box;}
 .img-comp-container {
-  position: relative;
-  height: 200px; /*should be the same height as the images*/
+    position: relative;
+        
 }
 .img-comp-img {
   position: absolute;
@@ -177,6 +179,7 @@ body {
 .img-comp-img img {
   display:block;
 }
+
 .img-comp-slider {
   position: absolute;
   z-index:9;
@@ -184,7 +187,7 @@ body {
   /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
-  background-color: #2196F3;
+  background-color: #f3c221;
   opacity: 0.7;
   border-radius: 50%;
 }

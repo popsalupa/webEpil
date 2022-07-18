@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #fdd4cc;
+    background: linear-gradient( #fdd4cc, #fff) ;
 }
 .alltitle {
     background-color: #ffffff85;
@@ -183,7 +183,7 @@ body {
     text-align: justify;
     font-family: 'Poiret One', cursive;
     font-weight: 600;
-    background: linear-gradient(#e2e2e2, #fff);
+    background: linear-gradient(#f4ecec, #fff);
     border-radius: 10px;
 }
 

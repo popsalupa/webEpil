@@ -7,19 +7,15 @@
 }
 
 body {
-    background-color:   #f0f3fa;
+    background-color: #f3faeefa;
 }
-.alltitle {
-    background:linear-gradient(70deg, #9cc0ef99, #FFF) ;
-    width: 90%;
-    display: flex;
-}
+
 
 .header-container {
     display: flex;
     justify-content: space-between;
     height: 5.5em;
-    background: linear-gradient(200deg, #94c9cc, #fff);
+    background: linear-gradient(200deg, #7ee27efc, #7693fff2);
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
 }
@@ -28,17 +24,10 @@ body {
     .menu-links{
         display: none;
     }
-    
-    /* убираем картинки в кард */
-    .cardfoto {
-        display: none;
-    }
-
 
     .logoimg, img {
         margin: auto;
     }
-
 
     /* hamburger */
     input {display: none;}
@@ -56,14 +45,12 @@ body {
         font-size: 2em;
     }
 
+
 .menu {
     list-style: none;
     padding: 0;
     color: #fff;
     overflow: hidden;
-  }
-
-.menu {
     z-index: 3;
     position: fixed;
     top: 0;
@@ -75,7 +62,7 @@ body {
     padding: 17px 0;
     text-transform: uppercase;
     line-height: 2em;
-    background:linear-gradient(#c2eaec, #f4f2f2);
+    background:linear-gradient(#37c637fc, #5d64caf2);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     transform: translateX(100%);
@@ -90,7 +77,6 @@ body {
     text-decoration: none;
     color: #000;
 }
-
 
 .nav__check:checked~.nav__back {
     background-color: rgba(0,0,0,.2);
@@ -115,7 +101,7 @@ body {
 }
 /* убрал второе меню */
 @media(min-width:1001px){
-    .nav {
+        .nav {
         display: none;
     }
 }
@@ -130,11 +116,10 @@ body {
 .menu-list {
     margin-top: 7%;
     display: flex;
-    background: linear-gradient(45deg, #bbc0d4, #76a3d6);
+    background: linear-gradient(45deg, #33e88a86, #1f43cf7b);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
 }
-
 
 .menu-item {
     font-family: 'Comfortaa', cursive;
@@ -145,7 +130,7 @@ body {
     margin-left: 1.5em;
 }
 .menu-item:hover {
-    color: rgb(97, 96, 141);
+    color: #83c432;
 }
 
 .menu-list-item {
@@ -163,7 +148,8 @@ body {
     display: block;
     width: 70px;
     border-radius: 30%;
-    background: linear-gradient(#c8caf0, #96a9ce);
+    background: linear-gradient(#37e689, #3027e6);
+    
 }
 .logoimg:hover {
     opacity: 0.4;
@@ -171,54 +157,22 @@ body {
 
 
 /* main */
-.containermain {
-    justify-content: center;
-    font-family: 'Poiret One', cursive;
-    font-weight: 600;
-}
-
-.someqwest {
+.alltitle {
     display: flex;
-    margin-top: 3%;
-    margin-right: 2%;
-    padding: 1em;
-    border-radius: 30px;
-    border-bottom-right-radius: 0;
-    text-align: justify;
-    background: linear-gradient(#b7e9ec, #a8c7e8);
+    flex-direction: column;
+    margin:auto auto;        
+    background-color: #f4f9f2e4;
+    width: 60%;
 }
-.qwest {
-    display: flexbox;
-    width: fit-content;
-    margin-top: 3%;
-    margin-right: 2%;
-    padding: 1em;
-    border-radius: 30px;
-    border-bottom-right-radius: 0;
-    text-align: justify;
-    background: linear-gradient(#fff, #4ad8f4ef);
-}
-.qwest:nth-child(odd){
-    text-shadow: 0.3px 1px rgba(0, 0, 0, 0.226);
-    color:#1a1618;
-}
-
-.qwest:nth-child(2n) {
-    background: linear-gradient(#fdfcff, #e9be4951);
-    margin-left: 2%;
-    border-radius: 30px;
-    border-bottom-left-radius: 0;
-    margin-bottom: 7%;
+.text {
+    margin:auto auto;        
+    background-color: #f4f9f2a3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    font-size: 2em;
 
 }
-
-.someqwest {
-    text-align: center;
-}
-
-h3 {
-    margin-bottom: 2%;
-    text-align: center;
+.anim {
+    margin: auto;
 }
 
 
@@ -227,10 +181,12 @@ h3 {
 /* footer */
 
 .footer-container {
-    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
     justify-content: space-between;
     height: 4em;
-    background: linear-gradient(200deg, #94c9cc, #fff);
+    background: linear-gradient(200deg, #501abcfc, rgb(112, 228, 137));
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
 }
@@ -263,5 +219,5 @@ h3 {
 }
 
 .socialimg:hover {
-    background-color: #beb2d3;
+    background-color: #67f7c5;
 }

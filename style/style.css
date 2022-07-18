@@ -215,9 +215,8 @@ body {
 /* photo */
 .me {
     display: flex;
-    z-index: -19;
-    margin: 0 2%;
-    width: 200px;
+    margin: auto auto;
+    width: 250px;
     opacity: 0.7;
     border-top-left-radius: 39px;
     border-bottom-right-radius: 39px;
@@ -240,6 +239,7 @@ body {
 }
 .maptext{
     font-size: 70%;
+    color: blue;
 }
 .studia {
     display: block;
