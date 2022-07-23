@@ -158,15 +158,34 @@ body {
 
 /* main */
 .alltitle {
+    border: solid 2px #000;
+    margin-top: 1%;
+    border-radius: 5em;
     display: flex;
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;        
-    background-color: #aae89433;
-    
+    width: 300px;
+    background-image: url('naturebg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
+.image {
+    width: 50px;
+}
+.article {
+    text-align: center;
+    font-size: 1.3em;
+}
+.name_card {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
+.text_card {
+    margin-top: 1%;
+    width: 90%;
+    text-align: center;
+    font-size: 1em;
+}
 
 
 /* footer */
