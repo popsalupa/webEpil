@@ -165,6 +165,7 @@ body {
     width: 60%;
 }
 .text {
+    text-align: center;
     margin:auto auto;        
     background-color: #f4f9f2a3;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  

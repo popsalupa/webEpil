@@ -187,9 +187,16 @@ body {
 
 .text_card {
     margin-top: 1%;
-    width: 90%;
     text-align: center;
     font-size: 1em;
+}
+
+.link{
+    text-decoration:none;
+    font-family: 'Poiret One', cursive;
+    font-weight: 600;
+    color: #000;
+
 }
 
 
